@@ -1,0 +1,32 @@
+.allAgents {
+  display: grid;
+  grid-template-columns: repeat(2, 150px); /* Adjust column width */
+  gap: 30px; /* Adjust gap between items */
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align to the left */
+}
+
+.ListAgent {
+  position: relative;
+  background-color: rgb(126, 126, 126);
+  width: 100%;
+  border: 2px solid #ff0101; /* Two-line border with black color */
+  padding: 10px; /* Add padding to create space between content and border */
+}
+
+.agentprofil {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.descriptionContainer {
+  position: absolute;
+  bottom: 10px; /* Distance from bottom */
+  right: 10px; /* Distance from right */
+}
+
+.description {
+  background-color: gray;
+  padding: 10px;
+}

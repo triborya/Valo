@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lekton:ital,wght@0,400;0,700;1,400&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Rationale&family=Teko:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(224, 223, 223);
+}
+h5 {
+  font-family: "Quantico";
+  font-size: 18px;
+}
+.IconVolume {
+  padding: 5px 80px 0px 80px;
+}
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 15%;
+  justify-content: space-between;
+  padding: 30px 80px 0px 80px;
+}
+.logo {
+  height: 50px;
+}
+
+.headerPart {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.linkHeader {
+  text-decoration: none;
+  color: #ff4454;
+  font-family: "Teko";
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/* PrincipalPage*/
+.AcceuilPage {
+  background-image: url("src/assets/images/background/logo.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  animation: pulse 4s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+/* ProfilPage */
+
+.Principal_page {
+  background-image: url("src/assets/images/background/bg_principal.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  animation: zoom 4s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+/* Les animations*/
+
+/* acceuil */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* agentpage auth */
+@keyframes zoom {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 102%;
+  }
+}
+
+/*Aauthentification */
+.AuthSection {
+  background-image: url("src/assets/images/background/connextionbckg.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  animation: zoom 2.5s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.FormAuth {
+  background-color: rgba(74, 74, 74, 0.508);
+  border-radius: 10px;
+  width: 30%;
+  margin: 20px 0px 0px 120px;
+  padding: 20px;
+}
+.Inputform {
+  padding: 10px 0px;
+}
+
+.prompt {
+  background-color: rgba(41, 36, 74, 0);
+  color: white;
+  width: 95%;
+  font-size: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ffffff;
+  font-family: "Quantico";
+  cursor: pointer;
+}
+.ButtonAuth {
+  display: flex;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  justify-content: flex-end;
+}
+.Submit {
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: #ff4454;
+  height: 35px;
+  width: 23%;
+  font-family: "Rationale";
+  font-size: 15px;
+  cursor: pointer;
+}
+.hidepsw{
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 20px;
+  width: 45%;
+  background-color: #8181817c;
+  margin-top: 10px;
+  font-family: "quantico";
+  font-size : 13px
+  ;
+}
+.FormSection {
+  display: flex;
+  justify-content: end;
+  padding: 0px 120px 20px 0px;
+}
+.ConnexionInscription {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.Question {
+  font-size: 15px;
+  font-family: "rationale";
+  text-decoration: none;
+  color: whitesmoke;
+}
+.linkAuth {
+  text-decoration: underline;
+  color: #ff4454;
+  font-size: 15px;
+  font-family: "rationale";
+}
+.Linkconnection {
+  color: whitesmoke;
+  font-size: 15px;
+  font-family: "Advent Pro";
+}
+.AgentPage {
+  background-image: url("src/assets/images/background/personnages/Agentbkg/gekkobkg.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* page Arme */
+.ArmePage {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+.WeaponSection {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px 60px 60px;
+  gap: 30px;
+}
+.Titlediv {
+  text-align: center;
+  padding: 20px 30px 20px 30px;
+  background-color: #2727276f;
+  border-radius: 5px;
+}
+.IntroWeapon {
+  font-family: "kode mono";
+  font-weight: 400;
+  color: #afadad;
+  font-size: 15px;
+}
+.Allweapons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 5px 0px 5px 0px;
+}
+.weaponImage {
+  padding: 30px 50px 10px 50px;
+}
+.weaponpicture {
+  width: 100%;
+  height: 150px;
+}
+
+.weaponImage:hover {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.card-weapon {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  background-color: #2727276f;
+  border-radius: 5px;
+  box-shadow: 3px 6px 12px #ff445456;
+  transition: box-shadow 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.card-weapon:hover {
+  box-shadow: 4px 4px 12px #ff4454a5;
+}
+.WeaponInfo {
+  padding: 10px 20px 10px 20px;
+}
+
+/* css carte weapon info */
+
+.weaponTitle {
+  font-family: "Kode Mono";
+  font-size: 35px;
+  color: #acacac;
+  text-shadow: 2px 2px 2px #ff44549d;
+}
+.weaponClass {
+  font-family: "lekton";
+  font-size: 17px;
+  color: #dadadaa8;
+  text-shadow: 2px 2px 2px #ff445491;
+}
+.weaponType {
+  font-family: "lekton";
+  font-size: 13px;
+  color: #dadadaa8;
+  text-shadow: 2px 2px 2px #ff445491;
+}
+.weaponCost {
+  font-family: "Kode Mono";
+  font-size: 17px;
+  color: #acacac;
+  text-shadow: 2px 2px 2px #ff445491;
+}
+.weaponDescription {
+  font-family: "lekton";
+  font-size: 13px;
+  color: #dadada;
+}
+/*page D'agent*/
+
+.AgentPage{
+  display: flex;
+  flex-direction: column;
+}
+.AgentSection{
+  display: flex;
+  flex-direction: row;
+}
+.ListAgent{
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Infoagent{
+  width: 50%;
+  display: flex;
+}
+.PictureAgent{
+  width: 15%;
+}
+/* TABLETTE STYLE CSS */
+
+@media screen and (max-width: 768px) {
+  /*header */
+  .header {
+    padding: 10px 60px 0px 60px;
+  }
+  /*header2*/
+  .linkHeader {
+    font-size: 20px;
+  }
+
+  /*page de connexion */
+
+  .FormAuth {
+    margin: 20px 0px 0px 70px;
+    width: 37%;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  .Submit {
+    height: 30px;
+    font-size: 14px;
+  }
+  .Question {
+    font-size: 13px;
+  }
+  .linkAuth {
+    font-size: 13px;
+  }
+  .Inputform {
+    padding: 5px 0px;
+  }
+}
+
+/* MOBILE STYLE CSS */
+
+@media screen and (max-width: 480px) {
+  .AcceuilPage {
+    background-image: url("src/assets/images/background/bckmobile.png");
+  }
+  .header {
+    padding: 8px 0px 0px 0px;
+    gap: 45px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    display: none;
+  }
+
+  .FormAuth {
+    margin: 50px 30px 0px 30px;
+    width: 73%;
+  }
+
+  .headerPart {
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .linkHeader {
+    font-size: 30px;
+  }
+  .AuthSection {
+    background-image: url("src/assets/images/background/bckmobileconnextion.png");
+  }
+  .Question {
+    font-size: 16px;
+  }
+  .linkAuth {
+    font-size: 16px;
+  }
+}
